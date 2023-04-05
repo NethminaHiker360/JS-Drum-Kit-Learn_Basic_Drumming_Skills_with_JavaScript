@@ -1,5 +1,9 @@
-const kits=["crash","kick","snare","tom"];
+const kits=["crash","kick","Snare","tom"];
 
-kits.forEach(kit=>{
-    
+const containerEl = document.querySelector("container");
+
+kits.forEach((kit)=>{
+    const btnEl=document.createElement("button");
+    btnEl.classList.add("btn");
+    containerEl.appendChild(btnEl);
 })
